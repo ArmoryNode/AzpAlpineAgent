@@ -1,11 +1,11 @@
-# Runs when a PR to `main` is completed.
+# Runs when changes are pushed to a PR or a new PR is created.
 
 name: build
 on:
   pull_request:
     branches:
       - main
-    types: [ closed ]
+    types: [ opened, synchronize, reopened ]
   workflow_dispatch:
 
 jobs:
