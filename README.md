@@ -80,29 +80,29 @@ A simple Azure Pipelines build agent using an Alpine base image, mainly for buil
 	version: '3.8'
 
 	services:
-	agent1:
-	  image: ghcr.io/armorynode/azpalpineagent:main
-	  environment:
-	    - AZP_URL=Your DevOps Organization URL
-	    - AZP_TOKEN=Your Azure DevOps PAT
-	    - AZP_AGENT_NAME=Agent1
-	    - AZP_POOL=Your Agent Pool Name
+ 	  agent1:
+	    image: ghcr.io/armorynode/azpalpineagent:main
+	    environment:
+	      - AZP_URL=Your DevOps Organization URL
+	      - AZP_TOKEN=Your Azure DevOps PAT
+	      - AZP_AGENT_NAME=Agent1
+	      - AZP_POOL=Your Agent Pool Name
  
-	agent2:
-	  image: ghcr.io/armorynode/azpalpineagent:main
-	  environment:
-	    - AZP_URL=Your DevOps Organization URL
-	    - AZP_TOKEN=Your Azure DevOps PAT
-	    - AZP_AGENT_NAME=Agent2
-	    - AZP_POOL=Your Agent Pool Name
+	  agent2:
+	    image: ghcr.io/armorynode/azpalpineagent:main
+	    environment:
+	      - AZP_URL=Your DevOps Organization URL
+	      - AZP_TOKEN=Your Azure DevOps PAT
+	      - AZP_AGENT_NAME=Agent2
+	      - AZP_POOL=Your Agent Pool Name
 
-	agent3:
-	  image: ghcr.io/armorynode/azpalpineagent:main
-	  environment:
-	    - AZP_URL=Your DevOps Organization URL
-	    - AZP_TOKEN=Your Azure DevOps PAT
-	    - AZP_AGENT_NAME=Agent3
-	    - AZP_POOL=Your Agent Pool Name
+	  agent3:
+	    image: ghcr.io/armorynode/azpalpineagent:main
+	    environment:
+   	      - AZP_URL=Your DevOps Organization URL
+	      - AZP_TOKEN=Your Azure DevOps PAT
+	      - AZP_AGENT_NAME=Agent3
+	      - AZP_POOL=Your Agent Pool Name
 	```
 
 2. Start the Docker Compose services:
