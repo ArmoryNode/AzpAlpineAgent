@@ -1,4 +1,6 @@
-name: Build and Push Docker Image
+# Pushes docker image to registry when a PR to `main` is completed.
+
+name: deploy
 
 on:
   pull_request_target:
