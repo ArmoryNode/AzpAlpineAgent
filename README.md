@@ -110,4 +110,4 @@ A simple Azure Pipelines build agent using an Alpine base image, mainly for buil
 	docker-compose up -d
 	```
 
-This will start three instances of the azpalpineagent container, each accessible on different ports (8081, 8082, and 8083).
+This will start three instances of the azpalpineagent container.
