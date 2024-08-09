@@ -5,6 +5,7 @@ on:
     branches:
         - '**'
     types: [ synchronize, opened, reopened ]
+  workflow_dispatch:
 
 jobs:
   build:
