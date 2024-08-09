@@ -1,7 +1,7 @@
 <h1>AzpAlpineAgent</h1>
 
 ![License](https://img.shields.io/badge/license-Apache_2.0-orange.svg)
-![Build Status](https://github.com/armorynode/azpalpineagent/actions/workflows/build-and-push-image.yml/badge.svg)
+[![Deployment](https://github.com/ArmoryNode/AzpAlpineAgent/actions/workflows/deploy.yml/badge.svg)](https://github.com/ArmoryNode/AzpAlpineAgent/actions/workflows/deploy.yml)
 
 ## Table of Contents
 
