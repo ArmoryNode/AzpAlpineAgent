@@ -1,10 +1,11 @@
-name: Build Docker Image
+# Runs when a PR to `main` is completed.
 
+name: build
 on:
   pull_request:
     branches:
-        - '**'
-    types: [ synchronize, opened, reopened ]
+      - main
+    types: [ closed ]
   workflow_dispatch:
 
 jobs:
