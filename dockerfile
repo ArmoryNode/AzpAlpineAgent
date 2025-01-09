@@ -28,22 +28,22 @@ COPY ./start.sh ./
 # Make start script executable
 RUN chmod +x ./start.sh
 
-# Install .NET 8
+# Install .NET 9
 RUN curl -sSL https://dot.net/v1/dotnet-install.sh -o dotnet-install.sh && \
     chmod +x dotnet-install.sh && \
-    ./dotnet-install.sh --channel 8.0 --install-dir /usr/share/dotnet && \
+    ./dotnet-install.sh --channel 9.0 --install-dir /usr/share/dotnet && \
     rm dotnet-install.sh
 
 # Install PowerShell 7
-RUN curl -L https://github.com/PowerShell/PowerShell/releases/download/v7.4.4/powershell-7.4.4-linux-musl-x64.tar.gz -o /tmp/powershell.tar.gz
+RUN curl -L https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/powershell-7.4.6-linux-musl-x64.tar.gz -o /tmp/powershell.tar.gz
 RUN mkdir -p /opt/microsoft/powershell/7 && \
     tar -xvf /tmp/powershell.tar.gz -C /opt/microsoft/powershell/7 && \
     chmod +x /opt/microsoft/powershell/7/pwsh && \
     ln -s /opt/microsoft/powershell/7/pwsh /usr/bin/pwsh && \
     rm /tmp/powershell.tar.gz
 
-# Install Node.js 20
-RUN curl -sL https://unofficial-builds.nodejs.org/download/release/v20.16.0/node-v20.16.0-linux-x64-musl.tar.gz -o /tmp/node.tar.gz && \
+# Install Node.js v22 (LTS)
+RUN curl -sL https://unofficial-builds.nodejs.org/download/release/v22.13.0/node-v22.13.0-linux-x64-musl.tar.gz -o /tmp/node.tar.gz && \
     tar -xzf /tmp/node.tar.gz -C /usr/local --strip-components=1 && \
     rm /tmp/node.tar.gz
 
