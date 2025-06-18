@@ -1,6 +1,5 @@
 FROM frolvlad/alpine-glibc:latest
 
-# Rest of the code...
 ENV TARGETARCH="linux-musl-x64"
 
 # Update and install dependencies
